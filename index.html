@@ -5,34 +5,192 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unkpg.com/aos@next/dist/aos.css">
     <title>Portofolio Izzaty zahara</title>
 </head>
 <body>
     <header>
-        <a href="#" class="Logo"> Izzaty zahara</a>
+        <!-- navigation menu -->
         <nav>
-            <a href="#" class="active"> Home </a>
-            <a href="#" > About </a>
-            <a href="#" > Services </a>
-            <a href="#" > Portofolio </a>
-            <a href="#" > Contact </a>
+            <div class="nav-container">
+                <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                    <span>Izzaty zahara</span>
+                </div>
+            <div class="link">
+                <a href="#" class="link"  data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"> Home </a>
+                <a href="#" class="link"  data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"> About </a>
+                <a href="#" class="link"  data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"> Services </a>
+                <a href="#" class="link"  data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"> Portofolio </a>
+                <a href="#" class="link"  data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"> Contact </a>
+            </div>
+        <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="link">
+                <a href="#" > Home </a>
+                <a href="#" > About </a>
+                <a href="#" > Services </a>
+                <a href="#" > Portofolio </a>
+                <a href="#" > Contact </a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+        </div>
         </nav>
     </header>
-    <section class="home">
-        <div class="home-img">
-            <img src="Foto/izza.JPG" alt="">
-        </div>
-        <div class="home-content">
-            <h1>Hi, Saya <span>Izzaty zahara</span></h1>
-            <h3 class="typing-text"> Saya Seorang <span></span></h3>
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-            <div class="social-icon">
-                <a href="#"<i class="fa-brands fa-linkedin"></a>
-                <a href="#"<i class="fa-brands fa-github"></a>
-                <a href="#"<i class="fa-brands fa-instagram"></a>
+    <section >
+        <div class="main-container">
+            <div class="image" data-aos="zoom-out" data-aos-duration="1500">
+                <img src="Foto/izza.JPG" alt="">
             </div>
-            <a href="#" class="btn">Hire me</a>
+            <div class="content">
+                <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700"> 
+                    Hi, Saya
+                    <span>Izzaty zahara</span>
+                </h1>
+                <div class="typewriter" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="900">
+                    Saya Seorang
+                    <span class="typewriter-text"></span>
+                    <label for=""></label>
+                </div>
+                <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                <div class="social-links"> 
+                    <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300">
+                        <i class="fa-brands fa-linkedin" ></i>
+                    </a>
+                    <a href="#" class="fa-brands fa-linkedin" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1400">
+                        <i class="fa-brands fa-github"></i>
+                    </a class="fa-brands fa-linkedin" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500">
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a class="fa-brands fa-linkedin" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1600">
+                </div>
+                <div class="btn" class="fa-brands fa-linkedin" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1800">
+                    <button>Hire me</button>
+                </div>
+            </div>
         </div>
     </section>
+    <!--About section start  -->
+    <section class="about" id ="about">
+        <div class="content">
+            <div class="title" data-aos="fade-up" data-aos-duration="1500"><span>About Me</span></div>
+            <div class="about-details">
+                <div class="left" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200">
+                    <img src="Foto/izza.JPG" alt="">
+                </div>
+                <div class="right">
+                    <div class="topic">Designing Is My Passion</div>
+                    <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="300">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                    <div class="button"  data-aos="zoom-in right" data-aos-duration="1500" data-aos-delay="1800">
+                        <button>Download CV</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- My Skill Section Start -->
+     <section class="skills" id="skills">
+        <div class="content">
+            <div class="title"  data-aos="fade-up" data-aos-duration="1200"><span>My Skills</span></div>
+            <div class="skills-title">
+                <div class="text">
+                    <div class="topic" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="200">
+                        Skills Reflects Our Knowledge
+                    </div>
+                    <p data-aos="fade-right" data-aos-duration="1200" data-aos-delay="400">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                    <div class="experience" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="600">
+                        <div class="num">10</div>
+                        <div class="exp">
+                            Years Of <br>
+                            Experience
+                        </div>
+                    </div>
+                </div>
+                <div class="boxes">
+                    <div class="box">
+                        <div class="topic" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="400">HTML</div>
+                        <div class="per" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="400">90%</div>
+                    </div>
+                    <div class="box">
+                        <div class="topic" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="400">CSS</div>
+                        <div class="per"data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="400">80%</div>
+                    </div>
+                    <div class="box">
+                        <div class="topic" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="400">JavaScript</div>
+                        <div class="per" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="400">70%</div>
+                    </div>
+                    <div class="box">
+                        <div class="topic" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="400">Pyton</div>
+                        <div class="per" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="400">90%</div>
+                    </div>
+                    <div class="box">
+                        <div class="topic" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="400">C#</div>
+                        <div class="per" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="400">90%</div>
+                    </div>
+                    <div class="box">
+                        <div class="topic" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="400">cc+</div>
+                        <div class="per" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="400">90%</div>
+                    </div>
+                    <div class="box">
+                        <div class="topic" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="400">Java</div>
+                        <div class="per" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="400">90%</div>
+                    </div>
+                    <div class="box">
+                        <div class="topic" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="400">Figma</div>
+                        <div class="per" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="400">90%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+     <!-- My service section start -->
+      <section class="service" id="service">
+        <div class="content">
+            <div class="title" data-aos="fade-up" data-aos-duration="1200"><span>My Service</span></div>
+            <div class="boxes">
+                <div class="box" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="600">
+                    <div class="icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <div class="topic"> Web Devlopment</div>
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                </div>
+                <div class="box" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="600">
+                    <div class="icon">
+                    <div class="icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <div class="topic"> Graphic Design</div>
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                </div>
+            </div>
+        </div>
+      </section>
+      <!-- Contact Me section Start -->
+       <section class="contact" id="contact">
+        <div class="content">
+            <div class="title" data-aos="fade-up" data-aos-duration="1200">
+                <span>Contact Me</span>
+            </div>
+            <div class="text">
+                <div class="topic" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="400"> have Any Project?</div>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                <div class="button" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="400">
+                    <button>Let's Chat</button>
+                </div>
+            </div>
+        </div>
+       </section>
+       <!-- Footer Section Start -->
+        <footer>
+            <div class="text">
+                <span>Creat by
+                    <a href="">izzaty zaja kalik ya</a>
+                    23456.2025 All Rights Reserved</span>
+            </div>
+        </footer>
+        <script src="https://unkpg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init(offset:0);
+        </script>
 </body>
 </html>
