@@ -1,196 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://unkpg.com/aos@next/dist/aos.css">
-    <title>Portofolio Izzaty zahara</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portofolio Izzaty Zahara</title>
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
+
+  <!-- AOS Animation -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- My CSS -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <!-- navigation menu -->
-        <nav>
-            <div class="nav-container">
-                <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
-                    <span>Izzaty zahara</span>
-                </div>
-            <div class="link">
-                <a href="#" class="link"  data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"> Home </a>
-                <a href="#" class="link"  data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"> About </a>
-                <a href="#" class="link"  data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"> Services </a>
-                <a href="#" class="link"  data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"> Portofolio </a>
-                <a href="#" class="link"  data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"> Contact </a>
-            </div>
+  <!-- HEADER -->
+  <header>
+    <nav>
+      <div class="nav-container">
+        <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+          <span>Izzaty Zahara</span>
+        </div>
+        <div class="link">
+          <a href="#">Home</a>
+          <a href="#about">About</a>
+          <a href="#service">Services</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#contact">Contact</a>
+        </div>
         <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+      </div>
+      <div class="dropdown">
+        <div class="link">
+          <a href="#">Home</a>
+          <a href="#about">About</a>
+          <a href="#service">Services</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#contact">Contact</a>
+          <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
         </div>
-        <div class="dropdown">
-            <div class="link">
-                <a href="#" > Home </a>
-                <a href="#" > About </a>
-                <a href="#" > Services </a>
-                <a href="#" > Portofolio </a>
-                <a href="#" > Contact </a>
-                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="main-container">
+      <div class="image" data-aos="zoom-out" data-aos-duration="1500">
+        <img src="Foto/izza.JPG" alt="Profile" />
+      </div>
+      <div class="content">
+        <h1 data-aos="fade-left" data-aos-delay="700">
+          Hi, Saya <span>Izzaty Zahara</span>
+        </h1>
+        <h2 data-aos="fade-right" data-aos-delay="900">
+          Saya seorang <span class="words"></span>
+        </h2>
+        <p data-aos="flip-down" data-aos-delay="1100">
+          Membangun pengalaman digital yang intuitif, modern, dan responsif.
+        </p>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/izzaty-zahara-br-barus/?fbclid=PAZXh0bgNhZW0CMTEAAacP4TLTzG9HzWyATTyZWll5YEhl6LZECa-05uKTfUTw25jzqL-ExBi-u_Q36A_aem_e2WjATk5_ERt0Fi1BYHkGA" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/Izzaaaaaaaaaa" target="_blank"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.instagram.com/izzatyzahara._?utm_source=ig_web_button_share_sheet&igsh=YWdrczB4bGp6ZjFi" target="_blank"><i class="fa-brands fa-instagram"></i></a>
         </div>
-        </nav>
-    </header>
-    <section >
-        <div class="main-container">
-            <div class="image" data-aos="zoom-out" data-aos-duration="1500">
-                <img src="Foto/izza.JPG" alt="">
-            </div>
-            <div class="content">
-                <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700"> 
-                    Hi, Saya
-                    <span>Izzaty zahara</span>
-                </h1>
-                <div class="typewriter" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="900">
-                    Saya Seorang
-                    <span class="typewriter-text"></span>
-                    <label for=""></label>
-                </div>
-                <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-                <div class="social-links"> 
-                    <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300">
-                        <i class="fa-brands fa-linkedin" ></i>
-                    </a>
-                    <a href="#" class="fa-brands fa-linkedin" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1400">
-                        <i class="fa-brands fa-github"></i>
-                    </a class="fa-brands fa-linkedin" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500">
-                    <a href="#">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a class="fa-brands fa-linkedin" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1600">
-                </div>
-                <div class="btn" class="fa-brands fa-linkedin" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1800">
-                    <button>Hire me</button>
-                </div>
-            </div>
+        <div class="btn" data-aos="zoom-in" data-aos-delay="1300">
+          <button>Hire Me</button>
         </div>
-    </section>
-    <!--About section start  -->
-    <section class="about" id ="about">
-        <div class="content">
-            <div class="title" data-aos="fade-up" data-aos-duration="1500"><span>About Me</span></div>
-            <div class="about-details">
-                <div class="left" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200">
-                    <img src="Foto/izza.JPG" alt="">
-                </div>
-                <div class="right">
-                    <div class="topic">Designing Is My Passion</div>
-                    <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="300">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-                    <div class="button"  data-aos="zoom-in right" data-aos-duration="1500" data-aos-delay="1800">
-                        <button>Download CV</button>
-                    </div>
-                </div>
-            </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="about" id="about">
+    <div class="content">
+      <div class="title"><span>About Me</span></div>
+      <div class="about-details">
+        <div class="left">
+          <img src="Foto/izza.JPG" alt="About Me" />
         </div>
-    </section>
-    <!-- My Skill Section Start -->
-     <section class="skills" id="skills">
-        <div class="content">
-            <div class="title"  data-aos="fade-up" data-aos-duration="1200"><span>My Skills</span></div>
-            <div class="skills-title">
-                <div class="text">
-                    <div class="topic" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="200">
-                        Skills Reflects Our Knowledge
-                    </div>
-                    <p data-aos="fade-right" data-aos-duration="1200" data-aos-delay="400">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-                    <div class="experience" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="600">
-                        <div class="num">10</div>
-                        <div class="exp">
-                            Years Of <br>
-                            Experience
-                        </div>
-                    </div>
-                </div>
-                <div class="boxes">
-                    <div class="box">
-                        <div class="topic" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="400">HTML</div>
-                        <div class="per" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="400">90%</div>
-                    </div>
-                    <div class="box">
-                        <div class="topic" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="400">CSS</div>
-                        <div class="per"data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="400">80%</div>
-                    </div>
-                    <div class="box">
-                        <div class="topic" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="400">JavaScript</div>
-                        <div class="per" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="400">70%</div>
-                    </div>
-                    <div class="box">
-                        <div class="topic" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="400">Pyton</div>
-                        <div class="per" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="400">90%</div>
-                    </div>
-                    <div class="box">
-                        <div class="topic" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="400">C#</div>
-                        <div class="per" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="400">90%</div>
-                    </div>
-                    <div class="box">
-                        <div class="topic" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="400">cc+</div>
-                        <div class="per" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="400">90%</div>
-                    </div>
-                    <div class="box">
-                        <div class="topic" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="400">Java</div>
-                        <div class="per" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="400">90%</div>
-                    </div>
-                    <div class="box">
-                        <div class="topic" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="400">Figma</div>
-                        <div class="per" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="400">90%</div>
-                    </div>
-                </div>
-            </div>
+        <div class="right">
+          <div class="topic">Designing Is My Passion</div>
+          <p>
+            Saya memiliki passion di bidang desain UI/UX dan pengembangan frontend.
+            Fokus saya adalah menciptakan antarmuka yang indah, fungsional, dan mudah digunakan.
+          </p>
+          <div class="button">
+            <button>Download CV</button>
+          </div>
         </div>
-     </section>
-     <!-- My service section start -->
-      <section class="service" id="service">
-        <div class="content">
-            <div class="title" data-aos="fade-up" data-aos-duration="1200"><span>My Service</span></div>
-            <div class="boxes">
-                <div class="box" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="600">
-                    <div class="icon">
-                        <i class="fas fa-desktop"></i>
-                    </div>
-                    <div class="topic"> Web Devlopment</div>
-                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-                </div>
-                <div class="box" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="600">
-                    <div class="icon">
-                    <div class="icon">
-                        <i class="fas fa-paint-brush"></i>
-                    </div>
-                    <div class="topic"> Graphic Design</div>
-                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-                </div>
-            </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICE SECTION -->
+  <section class="service" id="service">
+    <div class="content">
+      <div class="title"><span>My Services</span></div>
+      <div class="boxes">
+        <div class="box">
+          <div class="icon"><i class="fa-solid fa-pen-nib"></i></div>
+          <div class="topic">UI/UX Design</div>
+          <p>Membuat desain antarmuka modern dan intuitif.</p>
         </div>
-      </section>
-      <!-- Contact Me section Start -->
-       <section class="contact" id="contact">
-        <div class="content">
-            <div class="title" data-aos="fade-up" data-aos-duration="1200">
-                <span>Contact Me</span>
-            </div>
-            <div class="text">
-                <div class="topic" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="400"> have Any Project?</div>
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-                <div class="button" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="400">
-                    <button>Let's Chat</button>
-                </div>
-            </div>
+        <div class="box">
+          <div class="icon"><i class="fa-solid fa-code"></i></div>
+          <div class="topic">Frontend Development</div>
+          <p>Membangun website responsif dengan HTML, CSS, dan JS.</p>
         </div>
-       </section>
-       <!-- Footer Section Start -->
-        <footer>
-            <div class="text">
-                <span>Creat by
-                    <a href="">izzaty zaja kalik ya</a>
-                    23456.2025 All Rights Reserved</span>
-            </div>
-        </footer>
-        <script src="https://unkpg.com/aos@next/dist/aos.js"></script>
-        <script>
-            AOS.init(offset:0);
-        </script>
+        <div class="box">
+          <div class="icon"><i class="fa-solid fa-brain"></i></div>
+          <div class="topic">Creative Solutions</div>
+          <p>Memberikan solusi digital inovatif untuk brand Anda.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- PORTFOLIO SECTION -->
+<section class="portfolio" id="portfolio">
+  <div class="content">
+    <div class="title"><span>My Portfolio</span></div>
+
+    <!-- Folder Container -->
+    <div class="folders">
+      <!-- Folder 1: Lomba -->
+      <div class="folder" data-aos="zoom-in">
+        <div class="folder-icon"><i class="fa-solid fa-folder-open"></i></div>
+        <h3>Lomba</h3>
+        <div class="folder-content">
+          <img src="sertifikat/lomba1.jpg" alt="Sertifikat Lomba 1">
+          <img src="sertifikat/lomba2.jpg" alt="Sertifikat Lomba 2">
+        </div>
+      </div>
+
+      <!-- Folder 2: Kepanitiaan -->
+      <div class="folder" data-aos="zoom-in" data-aos-delay="200">
+        <div class="folder-icon"><i class="fa-solid fa-folder-open"></i></div>
+        <h3>Kepanitiaan</h3>
+        <div class="folder-content">
+          <img src="sertifikat/panitia1.jpg" alt="Sertifikat Panitia">
+          <img src="sertifikat/panitia2.jpg" alt="Sertifikat Panitia">
+        </div>
+      </div>
+
+      <!-- Folder 3: UI Design -->
+      <div class="folder" data-aos="zoom-in" data-aos-delay="400">
+        <div class="folder-icon"><i class="fa-solid fa-folder-open"></i></div>
+        <h3>UI Design</h3>
+        <div class="folder-content">
+          <img src="project/ui1.jpg" alt="Desain UI 1">
+          <img src="project/ui2.jpg" alt="Desain UI 2">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact" id="contact">
+    <div class="content">
+      <div class="title"><span>Contact Me</span></div>
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <div class="button">
+          <button type="submit">Send Message</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="text">
+      <span>Created by <a href="#">Izzaty Zahara</a> | ©2025 All Rights Reserved</span>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({ offset: 0, duration: 1200 });
+  </script>
 </body>
 </html>
