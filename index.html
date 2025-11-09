@@ -1,191 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portofolio Izzaty Zahara</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Izzaty Zahara — Portfolio</title>
 
-  <!-- Font Awesome -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-  />
-
-  <!-- AOS Animation -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
-  <!-- My CSS -->
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 </head>
 <body>
-  <!-- HEADER -->
+
   <header>
-    <nav>
-      <div class="nav-container">
-        <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
-          <span>Izzaty Zahara</span>
-        </div>
-        <div class="link">
-          <a href="#">Home</a>
+    <nav class="nav">
+      <div class="nav-inner">
+        <div class="logo">Izzaty Zahara</div>
+
+        <div class="nav-links" id="navLinks">
+          <a href="#home">Home</a>
           <a href="#about">About</a>
           <a href="#service">Services</a>
           <a href="#portfolio">Portfolio</a>
           <a href="#contact">Contact</a>
+          <a href="portfolio.html">All Portfolios</a>
         </div>
-        <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
-      </div>
-      <div class="dropdown">
-        <div class="link">
-          <a href="#">Home</a>
-          <a href="#about">About</a>
-          <a href="#service">Services</a>
-          <a href="#portfolio">Portfolio</a>
-          <a href="#contact">Contact</a>
-          <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
-        </div>
+
+        <button class="hambtn" id="hambtn" aria-label="menu"><i class="fa-solid fa-bars"></i></button>
       </div>
     </nav>
   </header>
 
-  <!-- HERO SECTION -->
-  <section class="hero">
-    <div class="main-container">
-      <div class="image" data-aos="zoom-out" data-aos-duration="1500">
-        <img src="Foto/izza.JPG" alt="Profile" />
-      </div>
-      <div class="content">
-        <h1 data-aos="fade-left" data-aos-delay="700">
-          Hi, Saya <span>Izzaty Zahara</span>
-        </h1>
-        <h2 data-aos="fade-right" data-aos-delay="900">
-          Saya seorang <span class="words"></span>
-        </h2>
-        <p data-aos="flip-down" data-aos-delay="1100">
-          Membangun pengalaman digital yang intuitif, modern, dan responsif.
-        </p>
-        <div class="social-links">
-          <a href="https://www.linkedin.com/in/izzaty-zahara-br-barus/?fbclid=PAZXh0bgNhZW0CMTEAAacP4TLTzG9HzWyATTyZWll5YEhl6LZECa-05uKTfUTw25jzqL-ExBi-u_Q36A_aem_e2WjATk5_ERt0Fi1BYHkGA" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-          <a href="https://github.com/Izzaaaaaaaaaa" target="_blank"><i class="fa-brands fa-github"></i></a>
-          <a href="https://www.instagram.com/izzatyzahara._?utm_source=ig_web_button_share_sheet&igsh=YWdrczB4bGp6ZjFi" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-wrap">
+      <img src="Foto/izza.JPG" alt="Izzaty" class="hero-photo" />
+      <div class="hero-text">
+        <h1>Hi, Saya <span>Izzaty Zahara</span></h1>
+        <h2>Saya seorang <span class="words">Web Designer</span></h2>
+        <p>Membangun pengalaman digital yang intuitif, modern, dan responsif.</p>
+        <div class="hero-actions">
+          <a class="btn" href="portfolio.html">View Portfolios</a>
         </div>
-        <div class="btn" data-aos="zoom-in" data-aos-delay="1300">
-          <button>Hire Me</button>
+        <div class="social-links">
+          <a href="https://instagram.com/yourusername" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://linkedin.com/in/yourusername" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <img src="Foto/izza.JPG" alt="Izzaty" class="about-photo" />
+        <div>
+          <h3>Designing Is My Passion</h3>
+          <p>Saya fokus pada UI/UX dan frontend development. Saya menciptakan antarmuka yang indah, fungsional, mudah digunakan, dan responsive.</p>
+          <a class="btn ghost" href="#">Download CV</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ABOUT SECTION -->
-  <section class="about" id="about">
-    <div class="content">
-      <div class="title"><span>About Me</span></div>
-      <div class="about-details">
-        <div class="left">
-          <img src="Foto/izza.JPG" alt="About Me" />
+  <!-- SERVICES -->
+  <section id="service" class="service">
+    <div class="container">
+      <h2 class="section-title">My Services</h2>
+      <div class="services-grid">
+        <div class="card">
+          <i class="fa-solid fa-pen-nib icon"></i>
+          <h4>UI/UX Design</h4>
+          <p>Mendesain antarmuka modern dan mudah digunakan.</p>
         </div>
-        <div class="right">
-          <div class="topic">Designing Is My Passion</div>
-          <p>
-            Saya memiliki passion di bidang desain UI/UX dan pengembangan frontend.
-            Fokus saya adalah menciptakan antarmuka yang indah, fungsional, dan mudah digunakan.
-          </p>
-          <div class="button">
-            <button>Download CV</button>
+        <div class="card">
+          <i class="fa-solid fa-code icon"></i>
+          <h4>Frontend Development</h4>
+          <p>Membangun website responsif dengan HTML/CSS/JS.</p>
+        </div>
+        <div class="card">
+          <i class="fa-solid fa-lightbulb icon"></i>
+          <h4>Creative Solutions</h4>
+          <p>Solusi kreatif untuk kebutuhan digital brand.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO (manual preview) -->
+  <section id="portfolio" class="portfolio">
+    <div class="container">
+      <h2 class="section-title">My Portfolio</h2>
+
+      <div class="folders">
+        <div class="folder" data-folder="lomba">
+          <div class="folder-top"><i class="fa-solid fa-folder-open folder-icon"></i><h3>Lomba</h3></div>
+          <div class="folder-content">
+            <!-- pastikan file ada di folder sertifikat/ -->
+            <img src="sertifikat/Sertifikat lomba silat.jpg" alt="Sertifikat Lomba" />
+          </div>
+        </div>
+
+        <div class="folder" data-folder="kepanitiaan">
+          <div class="folder-top"><i class="fa-solid fa-folder-open folder-icon"></i><h3>Kepanitiaan</h3></div>
+          <div class="folder-content">
+            <img src="sertifikat/Sertif bukber.png" alt="Bukber" />
+            <img src="sertifikat/Sertif malam puncak.png" alt="Malam Puncak" />
+            <img src="sertifikat/Sertif pameran.png" alt="Pameran" />
+          </div>
+        </div>
+
+        <div class="folder" data-folder="uidesign">
+          <div class="folder-top"><i class="fa-solid fa-folder-open folder-icon"></i><h3>UI Design</h3></div>
+          <div class="folder-content">
+            <img src="project/ui1.jpg" alt="UI 1" />
+            <img src="project/ui2.jpg" alt="UI 2" />
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align:center;margin-top:18px;">
+        <a class="btn" href="portfolio.html">All Portfolios (admin)</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section-title">Contact Me</h2>
+
+      <div class="contact-layout">
+        <form id="contactForm" class="contact-card">
+          <div class="field">
+            <label>Name</label>
+            <input type="text" id="cf-name" required />
+          </div>
+          <div class="field">
+            <label>Email</label>
+            <input type="email" id="cf-email" required />
+          </div>
+          <div class="field">
+            <label>Message</label>
+            <textarea id="cf-message" rows="5" required></textarea>
+          </div>
+          <button class="btn" type="submit">Send Message</button>
+        </form>
+
+        <div class="contact-info">
+          <h3>Let's work together</h3>
+          <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+          <p>Location: Indonesia</p>
+
+          <div class="contact-socials">
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SERVICE SECTION -->
-  <section class="service" id="service">
-    <div class="content">
-      <div class="title"><span>My Services</span></div>
-      <div class="boxes">
-        <div class="box">
-          <div class="icon"><i class="fa-solid fa-pen-nib"></i></div>
-          <div class="topic">UI/UX Design</div>
-          <p>Membuat desain antarmuka modern dan intuitif.</p>
-        </div>
-        <div class="box">
-          <div class="icon"><i class="fa-solid fa-code"></i></div>
-          <div class="topic">Frontend Development</div>
-          <p>Membangun website responsif dengan HTML, CSS, dan JS.</p>
-        </div>
-        <div class="box">
-          <div class="icon"><i class="fa-solid fa-brain"></i></div>
-          <div class="topic">Creative Solutions</div>
-          <p>Memberikan solusi digital inovatif untuk brand Anda.</p>
+  <!-- FOOTER (use the suggested footer) -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>About Me</h3>
+        <p>Saya adalah UI/UX dan Frontend Designer yang fokus pada pembuatan pengalaman digital modern dan estetis.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#service">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="portfolio.html">All Portfolios</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Connect</h3>
+        <div class="footer-socials">
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#"><i class="fa-brands fa-github"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
         </div>
       </div>
     </div>
-  </section>
-  <!-- PORTFOLIO SECTION -->
-<section class="portfolio" id="portfolio">
-  <div class="content">
-    <div class="title"><span>My Portfolio</span></div>
-
-    <!-- Folder Container -->
-    <div class="folders">
-      <!-- Folder 1: Lomba -->
-      <div class="folder" data-aos="zoom-in">
-        <div class="folder-icon"><i class="fa-solid fa-folder-open"></i></div>
-        <h3>Lomba</h3>
-        <div class="folder-content">
-          <img src="sertifikat/lomba1.jpg" alt="Sertifikat Lomba 1">
-          <img src="sertifikat/lomba2.jpg" alt="Sertifikat Lomba 2">
-        </div>
-      </div>
-
-      <!-- Folder 2: Kepanitiaan -->
-      <div class="folder" data-aos="zoom-in" data-aos-delay="200">
-        <div class="folder-icon"><i class="fa-solid fa-folder-open"></i></div>
-        <h3>Kepanitiaan</h3>
-        <div class="folder-content">
-          <img src="sertifikat/panitia1.jpg" alt="Sertifikat Panitia">
-          <img src="sertifikat/panitia2.jpg" alt="Sertifikat Panitia">
-        </div>
-      </div>
-
-      <!-- Folder 3: UI Design -->
-      <div class="folder" data-aos="zoom-in" data-aos-delay="400">
-        <div class="folder-icon"><i class="fa-solid fa-folder-open"></i></div>
-        <h3>UI Design</h3>
-        <div class="folder-content">
-          <img src="project/ui1.jpg" alt="Desain UI 1">
-          <img src="project/ui2.jpg" alt="Desain UI 2">
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-  <!-- CONTACT SECTION -->
-  <section class="contact" id="contact">
-    <div class="content">
-      <div class="title"><span>Contact Me</span></div>
-      <form class="contact-form">
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
-        <textarea rows="5" placeholder="Your Message" required></textarea>
-        <div class="button">
-          <button type="submit">Send Message</button>
-        </div>
-      </form>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    <div class="text">
-      <span>Created by <a href="#">Izzaty Zahara</a> | ©2025 All Rights Reserved</span>
+    <div class="footer-bottom">
+      <p>© 2025 Izzaty Zahara — All Rights Reserved</p>
     </div>
   </footer>
 
-  <!-- JS -->
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init({ offset: 0, duration: 1200 });
-  </script>
+  <!-- Popup (detail viewer) -->
+  <div id="detailModal" class="modal" aria-hidden="true">
+    <div class="modal-content">
+      <button class="close-btn" onclick="closeDetail()">Close</button>
+      <div id="detailContent"></div>
+    </div>
+  </div>
+
+  <!-- Firebase (for portfolio admin) -->
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-storage-compat.js"></script>
+
+  <script src="app.js"></script>
 </body>
 </html>

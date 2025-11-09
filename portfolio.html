@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>All Portfolios — Admin</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="nav-inner">
+      <div class="logo">Izzaty Zahara</div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container" style="padding:120px 20px;">
+    <h1 class="section-title">All Portfolios (Admin)</h1>
+
+    <div class="portfolio-header">
+      <div>
+        <h3>Items</h3>
+        <p class="muted">Manage portfolios (images stored in Firebase Storage)</p>
+      </div>
+      <div>
+        <button class="btn" onclick="openCreateForm()">+ New Portfolio</button>
+      </div>
+    </div>
+
+    <div id="portfolio-list" class="portfolio-grid"></div>
+  </main>
+
+  <!-- Detail Modal -->
+  <div id="detailModalAdmin" class="modal" aria-hidden="true">
+    <div class="modal-content">
+      <button class="close-btn" onclick="closeDetailAdmin()">Close</button>
+      <div id="detailContentAdmin"></div>
+    </div>
+  </div>
+
+  <!-- Form Modal -->
+  <div id="formModal" class="modal" aria-hidden="true">
+    <div class="modal-content">
+      <button class="close-btn" onclick="closeForm()">Close</button>
+      <h3 id="formTitle">New Portfolio</h3>
+
+      <form id="portfolioForm" onsubmit="return false;">
+        <label>Title</label>
+        <input type="text" id="title" placeholder="Title" required />
+        <label>Category</label>
+        <input type="text" id="category" placeholder="Category" required />
+        <label>Date</label>
+        <input type="date" id="date" />
+        <label>Description</label>
+        <textarea id="description" rows="4" placeholder="Description"></textarea>
+        <label>Link (optional)</label>
+        <input type="url" id="link" placeholder="https://..." />
+        <label>Image</label>
+        <input type="file" id="image" accept="image/*" />
+
+        <div style="text-align:right;margin-top:12px;">
+          <button class="btn" type="button" onclick="submitForm()">Save</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Firebase libs included in app.js but added compat here to be safe -->
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-storage-compat.js"></script>
+
+  <script src="app.js"></script>
+</body>
+</html>
