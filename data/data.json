@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "category": "lomba",
+    "title": "Lomba Silat",
+    "subtitle": "Achievement Certificate",
+    "image": "Sertifikat/Sertifikat lomba silat.jpg",
+    "alt": "Sertifikat Lomba Silat"
+  },
+  {
+    "id": 2,
+    "category": "kepanitiaan",
+    "title": "Bukber Event",
+    "subtitle": "Event Committee",
+    "image": "Sertifikat/Sertif bukber.png",
+    "alt": "Sertifikat Bukber"
+  },
+  {
+    "id": 3,
+    "category": "kepanitiaan",
+    "title": "Malam Puncak",
+    "subtitle": "Event Committee",
+    "image": "Sertifikat/Sertif malam puncak.png",
+    "alt": "Sertifikat Malam Puncak"
+  },
+  {
+    "id": 4,
+    "category": "kepanitiaan",
+    "title": "Exhibition",
+    "subtitle": "Event Committee",
+    "image": "Sertifikat/sertif pameran.png",
+    "alt": "Sertifikat Pameran"
+  },
+  {
+    "id": 5,
+    "category": "kepanitiaan",
+    "title": "Expo Event",
+    "subtitle": "Event Participation",
+    "image": "Sertifikat/Sertif Expo.png",
+    "alt": "Sertifikat Expo"
+  },
+  {
+    "id": 6,
+    "category": "kepanitiaan",
+    "title": "Seminar",
+    "subtitle": "Event Participation",
+    "image": "Sertifikat/Sertif seminar.png",
+    "alt": "Sertifikat Seminar"
+  },
+  {
+    "id": 7,
+    "category": "kepanitiaan",
+    "title": "LDK Makrab",
+    "subtitle": "Leadership Training",
+    "image": "Sertifikat/Sertif LDK Makrab.jpg",
+    "alt": "Sertifikat LDK Makrab"
+  },
+  {
+    "id": 8,
+    "category": "kepanitiaan",
+    "title": "Bedah Buku",
+    "subtitle": "Event Participation",
+    "image": "Sertifikat/Sertif-bedah buku.png",
+    "alt": "Sertifikat Bedah Buku"
+  },
+  {
+    "id": 9,
+    "category": "kepanitiaan",
+    "title": "Pengabdian Masyarakat",
+    "subtitle": "Community Service",
+    "image": "Sertifikat/Sertif-pengabdian.jpg",
+    "alt": "Sertifikat Pengabdian"
+  },
+  {
+    "id": 10,
+    "category": "kepanitiaan",
+    "title": "SKI Program",
+    "subtitle": "Event Participation",
+    "image": "Sertifikat/Sertif-ski.jpg",
+    "alt": "Sertifikat SKI"
+  },
+  {
+    "id": 11,
+    "category": "kepanitiaan",
+    "title": "Invection Event",
+    "subtitle": "Event Participation",
+    "image": "Sertifikat/Sertif-Invection.jpg",
+    "alt": "Sertifikat Invection"
+  }
+]
