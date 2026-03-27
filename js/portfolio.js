@@ -39,22 +39,6 @@ const STATIC_ITEMS = [
     subtitle: 'UI/UX Design Project',
     type: 'trash'
   },
-  {
-    id: 'webdev-1',
-    category: 'webdev',
-    title: 'E-commerce Website',
-    subtitle: 'Web Development Project',
-    type: 'placeholder',
-    icon: 'fa-solid fa-code'
-  },
-  {
-    id: 'webdev-2',
-    category: 'webdev',
-    title: 'Portfolio Website',
-    subtitle: 'Web Development Project',
-    type: 'placeholder',
-    icon: 'fa-solid fa-laptop-code'
-  }
 ];
 
 // ---- Build card HTML ----
