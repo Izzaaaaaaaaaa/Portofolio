@@ -221,6 +221,27 @@ function buildPlaceholderCard(item) {
     </div>`;
 }
 
+// ---- Update hero stats automatically ----
+function updateHeroStats(certItems) {
+  // Projects = uiux + webdev static items
+  const projectCount = STATIC_ITEMS.length;
+
+  // Events = kepanitiaan category from data.json
+  const eventCount = certItems.filter(i => i.category === 'kepanitiaan').length;
+
+  // Competitions = lomba category from data.json
+  const compCount = certItems.filter(i => i.category === 'lomba').length;
+
+  const statItems = document.querySelectorAll('.stat-item');
+  statItems.forEach(el => {
+    const label = el.querySelector('.stat-label').textContent.toLowerCase();
+    const numEl = el.querySelector('.stat-number');
+    if (label.includes('project'))     numEl.textContent = projectCount + '+';
+    if (label.includes('event'))       numEl.textContent = eventCount + '+';
+    if (label.includes('competition')) numEl.textContent = compCount + '+';
+  });
+}
+
 // ---- Render all cards into grid ----
 function renderGrid(certItems) {
   const grid = document.getElementById('portfolioGrid');
@@ -239,6 +260,9 @@ function renderGrid(certItems) {
   });
 
   grid.innerHTML = html;
+
+  // Update hero stats
+  updateHeroStats(certItems);
 
   // Attach observer to new cards
   grid.querySelectorAll('.fade-up').forEach(el => {
@@ -392,14 +416,11 @@ function openPantiWebDetail() {
             <li><i class="fa-solid fa-circle-check"></i> Verifikasi bantuan</li>
             <li><i class="fa-solid fa-clock-rotate-left"></i> Riwayat bantuan</li>
           </ul>
-          <p><strong>Tools:</strong> HTML, CSS, JavaScript, PHP</p>
+          <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript, PHP</p>
+          <p><strong>Database:</strong> Supabase</p>
           <p><strong>GitHub:</strong>
             <a href="https://github.com/tiurmagrace/Web_Panti_Wredha_BudhiDharmaKasih_Fix"
                target="_blank" style="color:var(--accent);text-decoration:underline">View on GitHub</a>
-          </p>
-          <p><strong>Design Link:</strong>
-            <a href="https://www.figma.com/design/QKs2O1JDglDaTCqppRobMG/Panti-Wredha-BDK?node-id=1580-106&t=mkuXACMqOAj9DIVJ-1"
-               target="_blank" style="color:var(--accent);text-decoration:underline">View on Figma</a>
           </p>
         </div>
         <div class="project-mockup">
