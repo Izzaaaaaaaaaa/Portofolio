@@ -2262,3 +2262,267 @@ input, textarea {
   display: block;
   font-size: 8px;
 }
+
+/* ---------- CUANTELLIGENT CARD ---------- */
+.cuan-showcase {
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(135deg, #0d7a6e, #1ab394);
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.cuan-showcase::before {
+  content: 'Cuantelligent';
+  position: absolute;
+  bottom: 8px;
+  left: 12px;
+  color: rgba(200, 255, 245, 0.85);
+  font-size: 11px;
+  font-weight: 600;
+  z-index: 2;
+}
+
+.portfolio-card:hover .cuan-showcase {
+  transform: scale(1.05);
+}
+
+.cuan-screen {
+  width: 100%;
+  height: 100%;
+  padding: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.cuan-topbar {
+  background: rgba(0,0,0,0.2);
+  border-radius: 3px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 6px;
+}
+
+.cuan-logo {
+  color: #c8fff5;
+  font-size: 7px;
+  font-weight: 700;
+}
+
+.cuan-logo span { color: #ffd700; }
+
+.cuan-nav {
+  display: flex;
+  gap: 4px;
+}
+
+.cuan-nav span {
+  width: 18px;
+  height: 4px;
+  background: rgba(200,255,245,0.4);
+  border-radius: 2px;
+}
+
+.cuan-body {
+  flex: 1;
+  display: flex;
+  gap: 4px;
+}
+
+.cuan-sidebar {
+  width: 24px;
+  background: rgba(0,0,0,0.2);
+  border-radius: 3px;
+  padding: 4px 3px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  align-items: center;
+}
+
+.cuan-menu {
+  width: 16px;
+  height: 5px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 2px;
+}
+
+.cuan-menu.active { background: #ffd700; }
+
+.cuan-robot { font-size: 10px; margin-top: auto; }
+
+.cuan-main {
+  flex: 1;
+  background: rgba(0,0,0,0.15);
+  border-radius: 3px;
+  padding: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.cuan-stat-row {
+  display: flex;
+  gap: 3px;
+}
+
+.cuan-stat {
+  flex: 1;
+  height: 18px;
+  border-radius: 2px;
+  opacity: 0.8;
+}
+
+.cuan-stat.teal   { background: #00bcd4; }
+.cuan-stat.green  { background: #4caf50; }
+.cuan-stat.yellow { background: #ffc107; }
+
+.cuan-chart {
+  flex: 1;
+  background: rgba(255,255,255,0.08);
+  border-radius: 2px;
+  position: relative;
+  overflow: hidden;
+}
+
+.cuan-chart::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 65%;
+  background: linear-gradient(to top, rgba(200,255,245,0.3), transparent);
+  clip-path: polygon(0 100%, 10% 65%, 25% 75%, 45% 35%, 60% 50%, 75% 20%, 90% 30%, 100% 15%, 100% 100%);
+}
+
+.cuan-chat-bubble {
+  height: 14px;
+  background: rgba(255,215,0,0.25);
+  border-radius: 6px 6px 6px 0;
+  border: 1px solid rgba(255,215,0,0.4);
+}
+
+/* ---------- CUANTELLIGENT DETAIL MODAL ---------- */
+.cuan-detail-mockup {
+  background: linear-gradient(135deg, #0d7a6e, #1ab394);
+  border-radius: 10px;
+  padding: 12px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+.cuan-detail-screen {
+  background: #f0fdfb;
+  border-radius: 8px;
+  overflow: hidden;
+  min-height: 200px;
+}
+
+.cuan-detail-topbar {
+  background: #0d7a6e;
+  padding: 7px 12px;
+}
+
+.cuan-detail-logo {
+  color: #c8fff5;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.cuan-detail-logo span { color: #ffd700; }
+
+.cuan-detail-body {
+  display: flex;
+  min-height: 170px;
+}
+
+.cuan-detail-sidebar {
+  width: 65px;
+  background: #0a5c52;
+  padding: 8px 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.cuan-detail-menu {
+  font-size: 7px;
+  color: rgba(255,255,255,0.55);
+  padding: 4px 5px;
+  border-radius: 3px;
+}
+
+.cuan-detail-menu.active {
+  background: rgba(255,215,0,0.25);
+  color: #ffd700;
+}
+
+.cuan-detail-content {
+  flex: 1;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.cuan-detail-stats {
+  display: flex;
+  gap: 5px;
+}
+
+.cuan-detail-stat {
+  flex: 1;
+  padding: 5px 4px;
+  border-radius: 4px;
+  font-size: 7px;
+  color: #fff;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.cuan-detail-stat.teal   { background: #00bcd4; }
+.cuan-detail-stat.green  { background: #4caf50; }
+.cuan-detail-stat.yellow { background: #ffc107; color: #333; }
+
+.cuan-detail-stat strong {
+  display: block;
+  font-size: 8px;
+}
+
+.cuan-detail-chart {
+  flex: 1;
+  background: rgba(13,122,110,0.1);
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+  min-height: 50px;
+}
+
+.cuan-detail-chart::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 70%;
+  background: linear-gradient(to top, rgba(13,122,110,0.4), transparent);
+  clip-path: polygon(0 100%, 10% 65%, 25% 75%, 45% 35%, 60% 50%, 75% 20%, 90% 30%, 100% 15%, 100% 100%);
+}
+
+.cuan-detail-chatbot {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255,215,0,0.1);
+  border: 1px solid rgba(255,215,0,0.3);
+  border-radius: 6px;
+  padding: 5px 8px;
+}
+
+.cuan-bot-icon { font-size: 14px; }
+
+.cuan-bot-bubble {
+  font-size: 7px;
+  color: #0d7a6e;
+}

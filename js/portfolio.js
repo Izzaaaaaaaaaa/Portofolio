@@ -26,6 +26,13 @@ const STATIC_ITEMS = [
     type: 'panti'
   },
   {
+    id: 'uiux-4',
+    category: 'uiux',
+    title: 'Cuantelligent',
+    subtitle: 'UI/UX Design Project',
+    type: 'cuan'
+  },
+  {
     id: 'webdev-1',
     category: 'webdev',
     title: 'E-commerce Website',
@@ -90,6 +97,44 @@ function buildMockupCard() {
           <h4>FUNK Paint E-commerce</h4>
           <p>UI/UX Design Project</p>
           <button class="view-btn" data-type="funkpaint">View</button>
+        </div>
+      </div>
+    </div>`;
+}
+
+function buildCuanCard() {
+  return `
+    <div class="portfolio-item fade-up" data-category="uiux">
+      <div class="portfolio-card">
+        <div class="cuan-showcase">
+          <div class="cuan-screen">
+            <div class="cuan-topbar">
+              <div class="cuan-logo">Cuan<span>telligent</span></div>
+              <div class="cuan-nav"><span></span><span></span><span></span></div>
+            </div>
+            <div class="cuan-body">
+              <div class="cuan-sidebar">
+                <div class="cuan-menu active"></div>
+                <div class="cuan-menu"></div>
+                <div class="cuan-menu"></div>
+                <div class="cuan-robot">🤖</div>
+              </div>
+              <div class="cuan-main">
+                <div class="cuan-stat-row">
+                  <div class="cuan-stat teal"></div>
+                  <div class="cuan-stat green"></div>
+                  <div class="cuan-stat yellow"></div>
+                </div>
+                <div class="cuan-chart"></div>
+                <div class="cuan-chat-bubble"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-overlay">
+          <h4>Cuantelligent</h4>
+          <p>UI/UX Design Project</p>
+          <button class="view-btn" data-type="cuan">View</button>
         </div>
       </div>
     </div>`;
@@ -196,6 +241,7 @@ function renderGrid(certItems) {
     if (item.type === 'mockup') html += buildMockupCard();
     else if (item.type === 'peken') html += buildPekenCard();
     else if (item.type === 'panti') html += buildPantiCard();
+    else if (item.type === 'cuan') html += buildCuanCard();
     else html += buildPlaceholderCard(item);
   });
 
@@ -272,6 +318,8 @@ function attachModalEvents() {
         openPekenDetail();
       } else if (type === 'panti') {
         openPantiDetail();
+      } else if (type === 'cuan') {
+        openCuanDetail();
       } else {
         alert('Project details coming soon!');
       }
@@ -313,6 +361,61 @@ function openFunkPaintDetail() {
                   <div class="mockup-product-large"></div>
                   <div class="mockup-product-large"></div>
                   <div class="mockup-product-large"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  `);
+}
+
+function openCuanDetail() {
+  openModal(`
+    <div class="project-detail">
+      <h2>Cuantelligent — Platform Monitoring UMKM</h2>
+      <div class="project-info">
+        <div class="project-description">
+          <p>Platform cerdas untuk monitoring dan pengelolaan keuangan UMKM. Menggabungkan fitur pembukuan, analitik kesehatan usaha, dan AI chatbot dalam satu aplikasi.</p>
+          <h3>Fitur Utama:</h3>
+          <ul>
+            <li><i class="fa-solid fa-book"></i> Buku kas digital</li>
+            <li><i class="fa-solid fa-heart-pulse"></i> Monitoring kesehatan usaha</li>
+            <li><i class="fa-solid fa-robot"></i> AI Chatbot asisten UMKM</li>
+            <li><i class="fa-solid fa-chart-line"></i> Analitik &amp; laporan keuangan</li>
+            <li><i class="fa-solid fa-handshake"></i> Koneksi UMKM &amp; investor</li>
+          </ul>
+          <p><strong>Tools:</strong> Figma, UI/UX Design</p>
+          <p><strong>Design Link:</strong>
+            <a href="https://www.figma.com/design/rlrPAIJmJnConuulTWrkYi/CuanTelligent?node-id=1-31791&t=WBmlaFTW21ha36qO-1"
+               target="_blank" style="color:var(--accent);text-decoration:underline">View on Figma</a>
+          </p>
+        </div>
+        <div class="project-mockup">
+          <div class="cuan-detail-mockup">
+            <div class="cuan-detail-screen">
+              <div class="cuan-detail-topbar">
+                <div class="cuan-detail-logo">Cuan<span>telligent</span></div>
+              </div>
+              <div class="cuan-detail-body">
+                <div class="cuan-detail-sidebar">
+                  <div class="cuan-detail-menu active">Dashboard</div>
+                  <div class="cuan-detail-menu">Buku Kas</div>
+                  <div class="cuan-detail-menu">Monitoring</div>
+                  <div class="cuan-detail-menu">Chatbot</div>
+                </div>
+                <div class="cuan-detail-content">
+                  <div class="cuan-detail-stats">
+                    <div class="cuan-detail-stat teal">Kas<br/><strong>Masuk</strong></div>
+                    <div class="cuan-detail-stat green">Kesehatan<br/><strong>Usaha</strong></div>
+                    <div class="cuan-detail-stat yellow">Laba<br/><strong>Bersih</strong></div>
+                  </div>
+                  <div class="cuan-detail-chart"></div>
+                  <div class="cuan-detail-chatbot">
+                    <div class="cuan-bot-icon">🤖</div>
+                    <div class="cuan-bot-bubble">Halo! Ada yang bisa saya bantu?</div>
+                  </div>
                 </div>
               </div>
             </div>
