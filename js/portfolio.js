@@ -65,30 +65,7 @@ function buildMockupCard() {
   return `
     <div class="portfolio-item fade-up" data-category="uiux">
       <div class="portfolio-card">
-        <div class="mockup-showcase">
-          <div class="mockup-device">
-            <div class="mockup-screen">
-              <div class="mockup-header">
-                <div class="mockup-logo">FUNK Point</div>
-                <div class="mockup-nav">HOME SHOP WISHLIST</div>
-              </div>
-              <div class="mockup-content">
-                <div class="mockup-hero">
-                  <div class="mockup-text">
-                    <h3>FUNK Point</h3>
-                    <p>Fashion Collection</p>
-                  </div>
-                  <div class="mockup-image"></div>
-                </div>
-                <div class="mockup-products">
-                  <div class="mockup-product"></div>
-                  <div class="mockup-product"></div>
-                  <div class="mockup-product"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <img src="Mockup/Mockup FunkPaint.jpeg" alt="FUNK Paint E-commerce Mockup" loading="lazy" style="width:100%;height:200px;object-fit:cover;" />
         <div class="portfolio-overlay">
           <h4>FUNK Paint E-commerce</h4>
           <p>UI/UX Design Project</p>
@@ -144,31 +121,7 @@ function buildCuanCard() {
   return `
     <div class="portfolio-item fade-up" data-category="uiux">
       <div class="portfolio-card">
-        <div class="cuan-showcase">
-          <div class="cuan-screen">
-            <div class="cuan-topbar">
-              <div class="cuan-logo">Cuan<span>telligent</span></div>
-              <div class="cuan-nav"><span></span><span></span><span></span></div>
-            </div>
-            <div class="cuan-body">
-              <div class="cuan-sidebar">
-                <div class="cuan-menu active"></div>
-                <div class="cuan-menu"></div>
-                <div class="cuan-menu"></div>
-                <div class="cuan-robot">🤖</div>
-              </div>
-              <div class="cuan-main">
-                <div class="cuan-stat-row">
-                  <div class="cuan-stat teal"></div>
-                  <div class="cuan-stat green"></div>
-                  <div class="cuan-stat yellow"></div>
-                </div>
-                <div class="cuan-chart"></div>
-                <div class="cuan-chat-bubble"></div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <img src="Mockup/Mockup CuanTelligent.png" alt="Cuantelligent Mockup" loading="lazy" style="width:100%;height:200px;object-fit:cover;" />
         <div class="portfolio-overlay">
           <h4>Cuantelligent</h4>
           <p>UI/UX Design Project</p>
@@ -182,28 +135,7 @@ function buildPantiCard() {
   return `
     <div class="portfolio-item fade-up" data-category="uiux">
       <div class="portfolio-card">
-        <div class="panti-showcase">
-          <div class="panti-screen">
-            <div class="panti-topbar">
-              <div class="panti-logo">BDK</div>
-              <div class="panti-nav"><span></span><span></span><span></span></div>
-            </div>
-            <div class="panti-hero">
-              <div class="panti-hero-text"></div>
-              <div class="panti-hero-img"></div>
-            </div>
-            <div class="panti-cards-row">
-              <div class="panti-mini-card blue"></div>
-              <div class="panti-mini-card orange"></div>
-              <div class="panti-mini-card green"></div>
-            </div>
-            <div class="panti-table">
-              <div class="panti-row"></div>
-              <div class="panti-row short"></div>
-              <div class="panti-row"></div>
-            </div>
-          </div>
-        </div>
+        <img src="Mockup/Mockup Panti BDK.jpeg" alt="Panti Wredha BDK Mockup" loading="lazy" style="width:100%;height:200px;object-fit:cover;" />
         <div class="portfolio-overlay">
           <h4>Panti Wredha Budhi Dharma Kasih</h4>
           <p>UI/UX Design Project</p>
