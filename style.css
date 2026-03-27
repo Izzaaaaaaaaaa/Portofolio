@@ -2526,3 +2526,308 @@ input, textarea {
   font-size: 7px;
   color: #0d7a6e;
 }
+
+/* ---------- TRASH TO POINTS CARD ---------- */
+.trash-showcase {
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(135deg, #2e7d32, #66bb6a);
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.trash-showcase::before {
+  content: 'Trash to Points';
+  position: absolute;
+  bottom: 8px;
+  left: 12px;
+  color: rgba(220,255,220,0.9);
+  font-size: 11px;
+  font-weight: 600;
+  z-index: 2;
+}
+
+.portfolio-card:hover .trash-showcase { transform: scale(1.05); }
+
+.trash-phone {
+  width: 80px;
+  height: 160px;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+  display: flex;
+  flex-direction: column;
+}
+
+.trash-status-bar {
+  background: #2e7d32;
+  color: #fff;
+  font-size: 5px;
+  padding: 2px 5px;
+  text-align: right;
+}
+
+.trash-header {
+  background: #4caf50;
+  padding: 4px 5px;
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.trash-avatar {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #fff3;
+}
+
+.trash-greeting { flex: 1; }
+
+.trash-name {
+  height: 4px;
+  background: rgba(255,255,255,0.8);
+  border-radius: 2px;
+  margin-bottom: 2px;
+  width: 80%;
+}
+
+.trash-level {
+  height: 3px;
+  background: rgba(255,255,255,0.5);
+  border-radius: 2px;
+  width: 50%;
+}
+
+.trash-stats {
+  display: flex;
+  gap: 3px;
+  padding: 3px 4px;
+}
+
+.trash-stat-box {
+  flex: 1;
+  background: #f1f8e9;
+  border-radius: 3px;
+  padding: 3px;
+  text-align: center;
+}
+
+.trash-stat-num {
+  font-size: 7px;
+  font-weight: 700;
+  color: #2e7d32;
+}
+
+.trash-stat-lbl {
+  font-size: 4px;
+  color: #666;
+}
+
+.trash-mission {
+  background: #388e3c;
+  margin: 3px 4px;
+  border-radius: 4px;
+  padding: 4px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.trash-mission-text {
+  height: 4px;
+  background: rgba(255,255,255,0.7);
+  border-radius: 2px;
+  flex: 1;
+  margin-right: 4px;
+}
+
+.trash-btn-mulai {
+  width: 18px;
+  height: 8px;
+  background: #ff9800;
+  border-radius: 3px;
+}
+
+.trash-bottomnav {
+  margin-top: auto;
+  background: #2e7d32;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 3px 2px;
+  font-size: 8px;
+}
+
+.trash-qr {
+  background: #fff;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 9px;
+}
+
+/* ---------- TRASH DETAIL MODAL ---------- */
+.trash-detail-mockup {
+  background: linear-gradient(135deg, #2e7d32, #66bb6a);
+  border-radius: 10px;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+.trash-detail-phone {
+  width: 130px;
+  background: #fff;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+  display: flex;
+  flex-direction: column;
+}
+
+.trash-detail-statusbar {
+  background: #2e7d32;
+  color: #fff;
+  font-size: 7px;
+  padding: 3px 8px;
+  text-align: right;
+}
+
+.trash-detail-header {
+  background: #4caf50;
+  padding: 8px;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.trash-detail-avatar {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.3);
+}
+
+.trash-detail-name {
+  font-size: 8px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.trash-detail-lvl {
+  font-size: 6px;
+  color: rgba(255,255,255,0.8);
+}
+
+.trash-detail-stats {
+  display: flex;
+  gap: 4px;
+  padding: 5px;
+}
+
+.trash-detail-stat {
+  flex: 1;
+  background: #f1f8e9;
+  border-radius: 4px;
+  padding: 4px;
+  text-align: center;
+}
+
+.trash-detail-stat strong {
+  display: block;
+  font-size: 10px;
+  color: #2e7d32;
+}
+
+.trash-detail-stat span {
+  font-size: 5px;
+  color: #666;
+}
+
+.trash-progress {
+  height: 3px;
+  background: #4caf50;
+  border-radius: 2px;
+  width: 30%;
+  margin: 2px auto 0;
+}
+
+.trash-detail-mission {
+  background: #388e3c;
+  margin: 4px 5px;
+  border-radius: 6px;
+  padding: 6px 8px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.trash-detail-mission-text {
+  font-size: 7px;
+  color: #fff;
+  font-weight: 600;
+  flex: 1;
+}
+
+.trash-detail-timer {
+  font-size: 6px;
+  background: #e53935;
+  color: #fff;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+.trash-detail-mulai {
+  font-size: 6px;
+  background: #ff9800;
+  color: #fff;
+  padding: 3px 6px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.trash-detail-section {
+  font-size: 7px;
+  font-weight: 700;
+  color: #2e7d32;
+  padding: 4px 8px 2px;
+}
+
+.trash-detail-edu {
+  height: 30px;
+  background: linear-gradient(135deg, #81c784, #a5d6a7);
+  margin: 0 5px;
+  border-radius: 4px;
+}
+
+.trash-detail-bottomnav {
+  margin-top: auto;
+  background: #2e7d32;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px 4px;
+  font-size: 11px;
+}
+
+.trash-detail-bottomnav .active {
+  background: #fff;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}

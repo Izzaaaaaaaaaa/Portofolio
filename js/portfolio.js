@@ -33,6 +33,13 @@ const STATIC_ITEMS = [
     type: 'cuan'
   },
   {
+    id: 'uiux-5',
+    category: 'uiux',
+    title: 'Trash to Points',
+    subtitle: 'UI/UX Design Project',
+    type: 'trash'
+  },
+  {
     id: 'webdev-1',
     category: 'webdev',
     title: 'E-commerce Website',
@@ -97,6 +104,48 @@ function buildMockupCard() {
           <h4>FUNK Paint E-commerce</h4>
           <p>UI/UX Design Project</p>
           <button class="view-btn" data-type="funkpaint">View</button>
+        </div>
+      </div>
+    </div>`;
+}
+
+function buildTrashCard() {
+  return `
+    <div class="portfolio-item fade-up" data-category="uiux">
+      <div class="portfolio-card">
+        <div class="trash-showcase">
+          <div class="trash-phone">
+            <div class="trash-status-bar">9:41</div>
+            <div class="trash-header">
+              <div class="trash-avatar"></div>
+              <div class="trash-greeting">
+                <div class="trash-name"></div>
+                <div class="trash-level"></div>
+              </div>
+            </div>
+            <div class="trash-stats">
+              <div class="trash-stat-box">
+                <div class="trash-stat-num">10</div>
+                <div class="trash-stat-lbl">Poin</div>
+              </div>
+              <div class="trash-stat-box">
+                <div class="trash-stat-num">2</div>
+                <div class="trash-stat-lbl">Sampah</div>
+              </div>
+            </div>
+            <div class="trash-mission">
+              <div class="trash-mission-text"></div>
+              <div class="trash-btn-mulai"></div>
+            </div>
+            <div class="trash-bottomnav">
+              <span>🏠</span><span>🎯</span><span class="trash-qr">📷</span><span>🎁</span><span>📚</span>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-overlay">
+          <h4>Trash to Points</h4>
+          <p>UI/UX Design Project</p>
+          <button class="view-btn" data-type="trash">View</button>
         </div>
       </div>
     </div>`;
@@ -242,6 +291,7 @@ function renderGrid(certItems) {
     else if (item.type === 'peken') html += buildPekenCard();
     else if (item.type === 'panti') html += buildPantiCard();
     else if (item.type === 'cuan') html += buildCuanCard();
+    else if (item.type === 'trash') html += buildTrashCard();
     else html += buildPlaceholderCard(item);
   });
 
@@ -320,6 +370,8 @@ function attachModalEvents() {
         openPantiDetail();
       } else if (type === 'cuan') {
         openCuanDetail();
+      } else if (type === 'trash') {
+        openTrashDetail();
       } else {
         alert('Project details coming soon!');
       }
@@ -362,6 +414,65 @@ function openFunkPaintDetail() {
                   <div class="mockup-product-large"></div>
                   <div class="mockup-product-large"></div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  `);
+}
+
+function openTrashDetail() {
+  openModal(`
+    <div class="project-detail">
+      <h2>Trash to Points — Gamified App</h2>
+      <div class="project-info">
+        <div class="project-description">
+          <p>Aplikasi mobile gamifikasi yang mendorong pengguna untuk membuang sampah dengan benar, menyelesaikan misi lingkungan, dan menukarkan poin dengan hadiah nyata.</p>
+          <h3>Fitur Utama:</h3>
+          <ul>
+            <li><i class="fa-solid fa-trash-can"></i> Kumpulkan sampah &amp; scan QR</li>
+            <li><i class="fa-solid fa-bullseye"></i> Misi &amp; tantangan harian</li>
+            <li><i class="fa-solid fa-coins"></i> Sistem poin &amp; reward</li>
+            <li><i class="fa-solid fa-gamepad"></i> Mini games bertema lingkungan</li>
+            <li><i class="fa-solid fa-book-open"></i> Edukasi pengelolaan sampah</li>
+            <li><i class="fa-solid fa-newspaper"></i> Info &amp; berita terbaru</li>
+          </ul>
+          <p><strong>Tools:</strong> Figma, UI/UX Design</p>
+          <p><strong>Type:</strong> Mobile App (Android/iOS)</p>
+        </div>
+        <div class="project-mockup">
+          <div class="trash-detail-mockup">
+            <div class="trash-detail-phone">
+              <div class="trash-detail-statusbar">9:41</div>
+              <div class="trash-detail-header">
+                <div class="trash-detail-avatar"></div>
+                <div>
+                  <div class="trash-detail-name">Hai, Izzaty!!!</div>
+                  <div class="trash-detail-lvl">🏅 Level</div>
+                </div>
+              </div>
+              <div class="trash-detail-stats">
+                <div class="trash-detail-stat">
+                  <strong>10</strong>
+                  <span>Poin Hari Ini</span>
+                  <div class="trash-progress"></div>
+                </div>
+                <div class="trash-detail-stat">
+                  <strong>2</strong>
+                  <span>Sampah Dibuang</span>
+                </div>
+              </div>
+              <div class="trash-detail-mission">
+                <div class="trash-detail-mission-text">Dapatkan 45 poin</div>
+                <div class="trash-detail-timer">02 : 23 : 04</div>
+                <div class="trash-detail-mulai">Mulai</div>
+              </div>
+              <div class="trash-detail-section">Edukasi</div>
+              <div class="trash-detail-edu"></div>
+              <div class="trash-detail-bottomnav">
+                <span>🏠</span><span>🎯</span><span class="active">📷</span><span>🎁</span><span>📚</span>
               </div>
             </div>
           </div>
