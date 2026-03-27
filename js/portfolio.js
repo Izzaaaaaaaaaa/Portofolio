@@ -39,6 +39,13 @@ const STATIC_ITEMS = [
     subtitle: 'UI/UX Design Project',
     type: 'trash'
   },
+  {
+    id: 'webdev-1',
+    category: 'webdev',
+    title: 'Panti Wredha Budhi Dharma Kasih',
+    subtitle: 'Web Development Project',
+    type: 'panti-web'
+  },
 ];
 
 // ---- Build card HTML ----
@@ -70,6 +77,20 @@ function buildMockupCard() {
           <h4>FUNK Paint E-commerce</h4>
           <p>UI/UX Design Project</p>
           <button class="view-btn" data-type="funkpaint">View</button>
+        </div>
+      </div>
+    </div>`;
+}
+
+function buildPantiWebCard() {
+  return `
+    <div class="portfolio-item fade-up" data-category="webdev">
+      <div class="portfolio-card">
+        <img src="Mockup/Mockup Panti BDK.jpeg" alt="Panti Wredha BDK Website Mockup" loading="lazy" style="width:100%;height:200px;object-fit:cover;" />
+        <div class="portfolio-overlay">
+          <h4>Panti Wredha Budhi Dharma Kasih</h4>
+          <p>Web Development Project</p>
+          <button class="view-btn" data-type="panti-web">View</button>
         </div>
       </div>
     </div>`;
@@ -213,6 +234,7 @@ function renderGrid(certItems) {
     else if (item.type === 'panti') html += buildPantiCard();
     else if (item.type === 'cuan') html += buildCuanCard();
     else if (item.type === 'trash') html += buildTrashCard();
+    else if (item.type === 'panti-web') html += buildPantiWebCard();
     else html += buildPlaceholderCard(item);
   });
 
@@ -296,6 +318,8 @@ function attachModalEvents() {
         openCuanDetail();
       } else if (type === 'trash') {
         openTrashDetail();
+      } else if (type === 'panti-web') {
+        openPantiWebDetail();
       } else {
         alert('Project details coming soon!');
       }
@@ -341,6 +365,46 @@ function openFunkPaintDetail() {
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  `);
+}
+
+function openPantiWebDetail() {
+  openModal(`
+    <div class="project-detail">
+      <h2>Panti Wredha Budhi Dharma Kasih — Website</h2>
+      <div class="project-info">
+        <div class="project-description">
+          <p>Sistem pendataan dan distribusi bantuan untuk Panti Wredha Budhi Dharma Kasih Purbalingga. Platform ini menghubungkan donatur dengan panti lansia secara transparan dan terorganisir.</p>
+          <h3>Fitur Publik:</h3>
+          <ul>
+            <li><i class="fa-solid fa-house-heart"></i> Profil &amp; sejarah pendirian panti</li>
+            <li><i class="fa-solid fa-hand-holding-dollar"></i> Forum donasi tunai</li>
+            <li><i class="fa-solid fa-box-open"></i> Forum donasi barang</li>
+          </ul>
+          <h3>Fitur Admin:</h3>
+          <ul>
+            <li><i class="fa-solid fa-chart-bar"></i> Monitoring bantuan tunai &amp; barang</li>
+            <li><i class="fa-solid fa-boxes-stacked"></i> Pemantauan stok barang</li>
+            <li><i class="fa-solid fa-users"></i> Data penghuni panti</li>
+            <li><i class="fa-solid fa-circle-check"></i> Verifikasi bantuan</li>
+            <li><i class="fa-solid fa-clock-rotate-left"></i> Riwayat bantuan</li>
+          </ul>
+          <p><strong>Tools:</strong> HTML, CSS, JavaScript, PHP</p>
+          <p><strong>GitHub:</strong>
+            <a href="https://github.com/tiurmagrace/Web_Panti_Wredha_BudhiDharmaKasih_Fix"
+               target="_blank" style="color:var(--accent);text-decoration:underline">View on GitHub</a>
+          </p>
+          <p><strong>Design Link:</strong>
+            <a href="https://www.figma.com/design/QKs2O1JDglDaTCqppRobMG/Panti-Wredha-BDK?node-id=1580-106&t=mkuXACMqOAj9DIVJ-1"
+               target="_blank" style="color:var(--accent);text-decoration:underline">View on Figma</a>
+          </p>
+        </div>
+        <div class="project-mockup">
+          <img src="Mockup/Mockup Panti BDK.jpeg" alt="Panti Wredha BDK Mockup"
+               style="width:100%;border-radius:10px;box-shadow:0 8px 25px rgba(0,0,0,0.3);" />
         </div>
       </div>
     </div>
