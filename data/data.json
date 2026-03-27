@@ -86,5 +86,21 @@
     "subtitle": "Event Participation",
     "image": "Sertifikat/Sertif-Invection.jpg",
     "alt": "Sertifikat Invection"
+  },
+  {
+    "id": 12,
+    "category": "lomba",
+    "title": "Prakerin PT. Duak Satu Dua Tiga",
+    "subtitle": "Internship Certificate — Predikat A",
+    "image": "Sertifikat/Sertif-prakerin.jpg",
+    "alt": "Sertifikat Prakerin"
+  },
+  {
+    "id": 13,
+    "category": "lomba",
+    "title": "Klikstart 2025 — Top 10 Finalist",
+    "subtitle": "Business Idea Competition — Bandung Techno Park",
+    "image": "Sertifikat/Sertif-klikstart.pdf",
+    "alt": "Sertifikat Klikstart 2025"
   }
 ]

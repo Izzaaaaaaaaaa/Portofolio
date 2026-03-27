@@ -43,14 +43,19 @@ const STATIC_ITEMS = [
 
 // ---- Build card HTML ----
 function buildCertCard(item) {
+  const isPdf = item.image && item.image.endsWith('.pdf');
+  const imgContent = isPdf
+    ? `<div class="cert-pdf-thumb"><i class="fa-solid fa-file-certificate"></i><span>${item.title}</span></div>`
+    : `<img src="${item.image}" alt="${item.alt}" loading="lazy" />`;
+
   return `
     <div class="portfolio-item fade-up" data-category="${item.category}">
       <div class="portfolio-card">
-        <img src="${item.image}" alt="${item.alt}" loading="lazy" />
+        ${imgContent}
         <div class="portfolio-overlay">
           <h4>${item.title}</h4>
           <p>${item.subtitle}</p>
-          <button class="view-btn" data-img="${item.image}" data-title="${item.title}">View</button>
+          <button class="view-btn" data-img="${isPdf ? '' : item.image}" data-pdf="${isPdf ? item.image : ''}" data-title="${item.title}">View</button>
         </div>
       </div>
     </div>`;
@@ -339,9 +344,12 @@ function attachModalEvents() {
     btn.addEventListener('click', () => {
       const type  = btn.dataset.type;
       const img   = btn.dataset.img;
+      const pdf   = btn.dataset.pdf;
       const title = btn.dataset.title;
 
-      if (img) {
+      if (pdf) {
+        window.open(pdf, '_blank');
+      } else if (img) {
         openModal(`
           <h3 style="color:var(--accent-light);margin-bottom:12px">${title}</h3>
           <img src="${img}" alt="${title}" style="width:100%;max-width:500px;border-radius:10px;" />
