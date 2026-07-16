@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -7,8 +8,38 @@
 
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
 </head>
+
 <body>
+  <!-- Floating Blobs Background -->
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+
+  <!-- Double Criss-Cross Marquee Background -->
+  <div class="double-marquee-wrapper">
+    <div class="marquee-container marquee-left">
+      <div class="marquee-content">
+        <span>Web Development</span> ✦ <span>UI/UX Design</span> ✦ <span>Networking</span> ✦ <span>Project
+          Management</span> ✦ <span>Software Engineering</span> ✦
+        <span>Web Development</span> ✦ <span>UI/UX Design</span> ✦ <span>Networking</span> ✦ <span>Project
+          Management</span> ✦ <span>Software Engineering</span> ✦
+      </div>
+    </div>
+    <div class="marquee-container marquee-right">
+      <div class="marquee-content reverse">
+        <span>Web Development</span> ✦ <span>UI/UX Design</span> ✦ <span>Networking</span> ✦ <span>Project
+          Management</span> ✦ <span>Software Engineering</span> ✦
+        <span>Web Development</span> ✦ <span>UI/UX Design</span> ✦ <span>Networking</span> ✦ <span>Project
+          Management</span> ✦ <span>Software Engineering</span> ✦
+      </div>
+    </div>
+  </div>
 
   <header>
     <nav class="nav">
@@ -30,21 +61,54 @@
 
   <!-- HERO -->
   <section id="home" class="hero">
+
     <div class="hero-wrap">
-      <img src="Foto/izza.JPG" alt="Izzaty" class="hero-photo" />
-      
+      <!-- Decorative Elements -->
+      <div class="floating-shape shape-1">✦</div>
+      <div class="floating-shape shape-2">✧</div>
+      <div class="floating-shape shape-3">●</div>
+
+      <div class="hero-photo-wrapper">
+        <img src="Foto/izza.JPG" alt="Izzaty" class="hero-photo" />
+        <div class="tech-icon icon-1"><i class="fa-brands fa-html5"></i></div>
+        <div class="tech-icon icon-2"><i class="fa-brands fa-css3-alt"></i></div>
+        <div class="tech-icon icon-3"><i class="fa-brands fa-js"></i></div>
+        <div class="tech-icon icon-4"><i class="fa-brands fa-react"></i></div>
+        <div class="tech-icon icon-5"><i class="fa-brands fa-php"></i></div>
+        <div class="tech-icon icon-6"><i class="fa-brands fa-figma"></i></div>
+        <div class="tech-icon icon-7"><i class="fa-brands fa-python"></i></div>
+        <div class="tech-icon icon-8">
+          <svg viewBox="0 0 128 128" width="24" height="24">
+            <path fill="#00599C"
+              d="M121.2,56.8L106.6,56.8L106.6,42.2L96.2,42.2L96.2,56.8L81.7,56.8L81.7,67.2L96.2,67.2L96.2,81.8L106.6,81.8L106.6,67.2L121.2,67.2L121.2,56.8Z" />
+            <path fill="#00599C"
+              d="M81.7,56.8L67.2,56.8L67.2,42.2L56.8,42.2L56.8,56.8L42.2,56.8L42.2,67.2L56.8,67.2L56.8,81.8L67.2,81.8L67.2,67.2L81.7,67.2L81.7,56.8Z" />
+            <path fill="#00599C"
+              d="M37,42.2l-5.6,0c-15.1,0-27.4,12.3-27.4,27.4c0,15.1,12.3,27.4,27.4,27.4l5.6,0v-10.4l-5.6,0 c-9.4,0-17.1-7.7-17.1-17.1c0-9.4,7.7-17.1,17.1-17.1l5.6,0V42.2z" />
+          </svg>
+        </div>
+        <div class="tech-icon icon-9">
+          <svg viewBox="0 0 128 128" width="24" height="24">
+            <path fill="#239120"
+              d="M118,52l-9.1,0l3-15.9l-11.8,0l-3,15.9l-15.9,0l3-15.9l-11.8,0l-3,15.9l-9.1,0l-2.2,11.8l9.1,0l-3,15.9 l-9.1,0l-2.2,11.8l9.1,0l-3,15.9l11.8,0l3-15.9l15.9,0l-3,15.9l11.8,0l3-15.9l9.1,0l2.2-11.8l-9.1,0l3-15.9l9.1,0L118,52z M95.8,79.7 l-15.9,0l3-15.9l15.9,0L95.8,79.7z" />
+            <path fill="#239120"
+              d="M48,42.2l-5.6,0c-15.1,0-27.4,12.3-27.4,27.4c0,15.1,12.3,27.4,27.4,27.4l5.6,0v-10.4l-5.6,0 c-9.4,0-17.1-7.7-17.1-17.1c0-9.4,7.7-17.1,17.1-17.1l5.6,0V42.2z" />
+          </svg>
+        </div>
+      </div>
+
       <div class="hero-content">
         <div class="hero-text">
           <h1>Hi, Saya <span>Izzaty Zahara BR Barus</span></h1>
           <h2>Saya seorang <span class="words">Software Engineering Student</span></h2>
           <p>Mengembangkan solusi web dan sistem teknologi yang inovatif dengan pendekatan user-centered design.</p>
         </div>
-        
+
         <div class="hero-actions">
           <a class="btn" href="#portfolio">View Portfolios</a>
           <a class="btn ghost" href="#contact">Contact Me</a>
         </div>
-        
+
         <div class="hero-skills">
           <div class="skill-badge">
             <i class="fa-solid fa-code"></i>
@@ -55,7 +119,7 @@
             <span>UI/UX Design</span>
           </div>
         </div>
-        
+
         <div class="hero-stats">
           <div class="stat-item">
             <span class="stat-number">—</span>
@@ -70,10 +134,12 @@
             <span class="stat-label">Competitions</span>
           </div>
         </div>
-        
+
         <div class="social-links">
-          <a href="https://www.instagram.com/izzatyzahara._?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><i class="fab fa-instagram"></i></a>
-          <a href="https://www.linkedin.com/in/izzaty-zahara-br-barus/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://www.instagram.com/izzatyzahara._?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+            target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/izzaty-zahara-br-barus/" target="_blank"><i
+              class="fab fa-linkedin"></i></a>
           <a href="https://github.com/Izzaaaaaaaaaa" target="_blank"><i class="fab fa-github"></i></a>
           <a href="https://wa.me/6281260758514" target="_blank"><i class="fab fa-whatsapp"></i></a>
         </div>
@@ -81,15 +147,22 @@
     </div>
   </section>
 
+
+
   <!-- ABOUT -->
   <section id="about" class="about">
-    <div class="container">
+    <svg class="section-wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100">
+      <path fill="var(--card-bg)" fill-opacity="0.3"
+        d="M0,64L80,58.7C160,53,320,43,480,48C640,53,800,75,960,74.7C1120,75,1280,53,1360,42.7L1440,32L1440,100L1360,100C1280,100,1120,100,960,100C800,100,640,100,480,100C320,100,160,100,80,100L0,100Z">
+      </path>
+    </svg>
+    <div class="container" style="position: relative; z-index: 2;">
       <h2 class="section-title">About Me</h2>
       <div class="about-grid">
         <img src="Foto/izza.JPG" alt="Izzaty" class="about-photo" />
         <div class="about-content">
           <h3>Software Engineering Student & Web Development</h3>
-          
+
           <div class="about-highlights">
             <div class="highlight-item">
               <i class="fa-solid fa-graduation-cap"></i>
@@ -99,7 +172,7 @@
                 <span class="sub-text">Background: Computer & Network Engineering</span>
               </div>
             </div>
-            
+
             <div class="highlight-item">
               <i class="fa-solid fa-code"></i>
               <div>
@@ -108,7 +181,7 @@
                 <span class="sub-text">Full-stack development & responsive design</span>
               </div>
             </div>
-            
+
             <div class="highlight-item">
               <i class="fa-solid fa-palette"></i>
               <div>
@@ -117,7 +190,7 @@
                 <span class="sub-text">User-centered design approach</span>
               </div>
             </div>
-            
+
             <div class="highlight-item">
               <i class="fa-solid fa-network-wired"></i>
               <div>
@@ -126,7 +199,7 @@
                 <span class="sub-text">Network setup & IT infrastructure</span>
               </div>
             </div>
-            
+
             <div class="highlight-item">
               <i class="fa-solid fa-users-gear"></i>
               <div>
@@ -136,11 +209,12 @@
               </div>
             </div>
           </div>
-          
+
           <p class="about-summary">
-            Saat ini berfokus pada penguatan kompetensi web development dan pengembangan sistem berbasis kebutuhan pengguna.
+            Saat ini berfokus pada penguatan kompetensi web development dan pengembangan sistem berbasis kebutuhan
+            pengguna.
           </p>
-          
+
           <div style="text-align: center; margin-top: 28px;">
             <a class="btn ghost" href="CV/CV_Izzaty.pdf" download>Download CV</a>
           </div>
@@ -151,7 +225,12 @@
 
   <!-- SERVICES -->
   <section id="service" class="service">
-    <div class="container">
+    <svg class="section-wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100">
+      <path fill="var(--card-bg)" fill-opacity="0.4"
+        d="M0,32L48,42.7C96,53,192,75,288,74.7C384,75,480,53,576,42.7C672,32,768,32,864,42.7C960,53,1056,75,1152,80C1248,85,1344,75,1392,69.3L1440,64L1440,100L1392,100C1344,100,1248,100,1152,100C1056,100,960,100,864,100C768,100,672,100,576,100C480,100,384,100,288,100C192,100,96,100,48,100L0,100Z">
+      </path>
+    </svg>
+    <div class="container" style="position: relative; z-index: 2;">
       <h2 class="section-title">My Services</h2>
       <div class="services-grid">
         <div class="card">
@@ -190,9 +269,14 @@
 
   <!-- PORTFOLIO -->
   <section id="portfolio" class="portfolio">
-    <div class="container">
+    <svg class="section-wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100">
+      <path fill="var(--card-bg)" fill-opacity="0.2"
+        d="M0,64L48,80C96,96,192,128,288,128C384,128,480,96,576,74.7C672,53,768,43,864,53.3C960,64,1056,96,1152,96C1248,96,1344,64,1392,48L1440,32L1440,100L1392,100C1344,100,1248,100,1152,100C1056,100,960,100,864,100C768,100,672,100,576,100C480,100,384,100,288,100C192,100,96,100,48,100L0,100Z">
+      </path>
+    </svg>
+    <div class="container" style="position: relative; z-index: 2;">
       <h2 class="section-title">My Portfolio</h2>
-      
+
       <div class="portfolio-categories">
         <button class="category-btn active" data-category="all">All</button>
         <button class="category-btn" data-category="lomba">Competitions</button>
@@ -208,7 +292,12 @@
 
   <!-- CONTACT -->
   <section id="contact" class="contact">
-    <div class="container">
+    <svg class="section-wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100">
+      <path fill="var(--card-bg)" fill-opacity="0.3"
+        d="M0,96L48,80C96,64,192,32,288,32C384,32,480,64,576,80C672,96,768,96,864,80C960,64,1056,32,1152,32C1248,32,1344,64,1392,80L1440,96L1440,100L1392,100C1344,100,1248,100,1152,100C1056,100,960,100,864,100C768,100,672,100,576,100C480,100,384,100,288,100C192,100,96,100,48,100L0,100Z">
+      </path>
+    </svg>
+    <div class="container" style="position: relative; z-index: 2;">
       <h2 class="section-title">Contact Me</h2>
 
       <div class="contact-center">
@@ -238,13 +327,15 @@
         <!-- main card -->
         <div class="contact-info">
           <h3>Let's work together</h3>
-          <p>Tertarik untuk berkolaborasi atau punya pertanyaan? Hubungi saya lewat salah satu platform di bawah ini.</p>
+          <p>Tertarik untuk berkolaborasi atau punya pertanyaan? Hubungi saya lewat salah satu platform di bawah ini.
+          </p>
 
           <div class="contact-socials">
             <a href="https://www.linkedin.com/in/izzaty-zahara-br-barus/" target="_blank" aria-label="LinkedIn">
               <i class="fa-brands fa-linkedin"></i>
             </a>
-            <a href="https://www.instagram.com/izzatyzahara._?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" aria-label="Instagram">
+            <a href="https://www.instagram.com/izzatyzahara._?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+              target="_blank" aria-label="Instagram">
               <i class="fa-brands fa-instagram"></i>
             </a>
             <a href="https://github.com/Izzaaaaaaaaaa" target="_blank" aria-label="GitHub">
@@ -265,7 +356,8 @@
     <div class="footer-container">
       <div class="footer-section">
         <h3>About Me</h3>
-        <p>Saya adalah mahasiswa Software Engineering yang berfokus pada pengembangan web full-stack dan solusi teknologi berbasis kebutuhan pengguna.</p>
+        <p>Saya adalah mahasiswa Software Engineering yang berfokus pada pengembangan web full-stack dan solusi
+          teknologi berbasis kebutuhan pengguna.</p>
       </div>
       <div class="footer-section">
         <h3>Quick Links</h3>
@@ -281,7 +373,8 @@
         <div class="footer-socials">
           <a href="https://www.linkedin.com/in/izzaty-zahara-br-barus/"><i class="fa-brands fa-linkedin"></i></a>
           <a href="https://github.com/Izzaaaaaaaaaa"><i class="fa-brands fa-github"></i></a>
-          <a href="https://www.instagram.com/izzatyzahara._?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.instagram.com/izzatyzahara._?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i
+              class="fa-brands fa-instagram"></i></a>
           <a href="https://wa.me/6281260758514" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
         </div>
       </div>
@@ -302,4 +395,5 @@
   <script src="js/main.js"></script>
   <script src="js/portfolio.js"></script>
 </body>
+
 </html>

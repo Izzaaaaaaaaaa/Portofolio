@@ -14,7 +14,7 @@ const STATIC_ITEMS = [
   {
     id: 'uiux-2',
     category: 'uiux',
-    title: 'Peken Banyumas UMKM',
+    title: 'Peken Banyumas Artisan Digital',
     subtitle: 'UI/UX Design Project',
     type: 'peken'
   },
@@ -40,11 +40,25 @@ const STATIC_ITEMS = [
     type: 'trash'
   },
   {
+    id: 'uiux-6',
+    category: 'uiux',
+    title: 'Panda Purchasing',
+    subtitle: 'UI/UX Design Project',
+    type: 'panda'
+  },
+  {
     id: 'webdev-1',
     category: 'webdev',
     title: 'Panti Wredha Budhi Dharma Kasih',
     subtitle: 'Web Development Project',
     type: 'panti-web'
+  },
+  {
+    id: 'webdev-2',
+    category: 'webdev',
+    title: 'Peken Banyumas Artisan Digital',
+    subtitle: 'Web Development Project',
+    type: 'peken-web'
   },
 ];
 
@@ -91,6 +105,20 @@ function buildPantiWebCard() {
           <h4>Panti Wredha Budhi Dharma Kasih</h4>
           <p>Web Development Project</p>
           <button class="view-btn" data-type="panti-web">View</button>
+        </div>
+      </div>
+    </div>`;
+}
+
+function buildPekenWebCard() {
+  return `
+    <div class="portfolio-item fade-up" data-category="webdev">
+      <div class="portfolio-card">
+        <img src="Mockup/Banner%202.png" alt="Peken Banyumas Web" loading="lazy" style="width:100%;height:200px;object-fit:cover;object-position:top;" />
+        <div class="portfolio-overlay">
+          <h4>Peken Banyumas Artisan Digital</h4>
+          <p>Web Development Project</p>
+          <button class="view-btn" data-type="peken-web">View</button>
         </div>
       </div>
     </div>`;
@@ -170,32 +198,9 @@ function buildPekenCard() {
   return `
     <div class="portfolio-item fade-up" data-category="uiux">
       <div class="portfolio-card">
-        <div class="peken-showcase">
-          <div class="peken-screen">
-            <div class="peken-topbar">
-              <div class="peken-logo">Peken</div>
-              <div class="peken-nav-dots"><span></span><span></span><span></span></div>
-            </div>
-            <div class="peken-sidebar">
-              <div class="peken-menu-item active"></div>
-              <div class="peken-menu-item"></div>
-              <div class="peken-menu-item"></div>
-              <div class="peken-menu-item"></div>
-            </div>
-            <div class="peken-main">
-              <div class="peken-stat-row">
-                <div class="peken-stat green"></div>
-                <div class="peken-stat yellow"></div>
-                <div class="peken-stat red"></div>
-              </div>
-              <div class="peken-chart"></div>
-              <div class="peken-table-row"></div>
-              <div class="peken-table-row short"></div>
-            </div>
-          </div>
-        </div>
+        <img src="Mockup/Banner%202.png" alt="Peken Banyumas Design" loading="lazy" style="width:100%;height:200px;object-fit:cover;object-position:top;" />
         <div class="portfolio-overlay">
-          <h4>Peken Banyumas UMKM</h4>
+          <h4>Peken Banyumas Artisan Digital</h4>
           <p>UI/UX Design Project</p>
           <button class="view-btn" data-type="peken">View</button>
         </div>
@@ -255,7 +260,9 @@ function renderGrid(certItems) {
     else if (item.type === 'panti') html += buildPantiCard();
     else if (item.type === 'cuan') html += buildCuanCard();
     else if (item.type === 'trash') html += buildTrashCard();
+    else if (item.type === 'panda') html += buildPandaCard();
     else if (item.type === 'panti-web') html += buildPantiWebCard();
+    else if (item.type === 'peken-web') html += buildPekenWebCard();
     else html += buildPlaceholderCard(item);
   });
 
@@ -342,8 +349,12 @@ function attachModalEvents() {
         openCuanDetail();
       } else if (type === 'trash') {
         openTrashDetail();
+      } else if (type === 'panda') {
+        openPandaDetail();
       } else if (type === 'panti-web') {
         openPantiWebDetail();
+      } else if (type === 'peken-web') {
+        openPekenWebDetail();
       } else {
         alert('Project details coming soon!');
       }
@@ -416,8 +427,13 @@ function openPantiWebDetail() {
             <li><i class="fa-solid fa-circle-check"></i> Verifikasi bantuan</li>
             <li><i class="fa-solid fa-clock-rotate-left"></i> Riwayat bantuan</li>
           </ul>
+          <p><strong>Peran:</strong> Backend</p>
           <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript, PHP</p>
-          <p><strong>Database:</strong> Supabase</p>
+          <p><strong>Database:</strong> MySQL</p>
+          <p><strong>Website:</strong>
+            <a href="https://pantiwredhabdk.wuaze.com/"
+               target="_blank" style="color:var(--accent);text-decoration:underline">Visit Website</a>
+          </p>
           <p><strong>GitHub:</strong>
             <a href="https://github.com/tiurmagrace/Web_Panti_Wredha_BudhiDharmaKasih_Fix"
                target="_blank" style="color:var(--accent);text-decoration:underline">View on GitHub</a>
@@ -607,7 +623,7 @@ function openPantiDetail() {
 function openPekenDetail() {
   openModal(`
     <div class="project-detail">
-      <h2>Peken Banyumas — Platform UMKM</h2>
+      <h2>Peken Banyumas Artisan Digital</h2>
       <div class="project-info">
         <div class="project-description">
           <p>Desain UI/UX platform digital untuk pengelolaan UMKM di Pasar Peken Banyumas. Memudahkan pedagang dalam mengelola usaha secara terpadu dalam satu website.</p>
@@ -626,31 +642,92 @@ function openPekenDetail() {
           </p>
         </div>
         <div class="project-mockup">
-          <div class="peken-detail-mockup">
-            <div class="peken-detail-screen">
-              <div class="peken-detail-topbar">
-                <div class="peken-detail-logo">Peken Banyumas</div>
-              </div>
-              <div class="peken-detail-body">
-                <div class="peken-detail-sidebar">
-                  <div class="peken-detail-menu active">Dashboard</div>
-                  <div class="peken-detail-menu">Sewa Lapak</div>
-                  <div class="peken-detail-menu">Monitoring</div>
-                  <div class="peken-detail-menu">Pembukuan</div>
-                  <div class="peken-detail-menu">Transaksi</div>
-                  <div class="peken-detail-menu">Stok</div>
-                </div>
-                <div class="peken-detail-content">
-                  <div class="peken-detail-stats">
-                    <div class="peken-detail-stat green">Lapak<br/><strong>Aktif</strong></div>
-                    <div class="peken-detail-stat yellow">Stok<br/><strong>Monitor</strong></div>
-                    <div class="peken-detail-stat red">Transaksi<br/><strong>Hari Ini</strong></div>
-                  </div>
-                  <div class="peken-detail-chart"></div>
-                </div>
-              </div>
-            </div>
+          <img src="Mockup/Banner%202.png" alt="Peken Banyumas Design" style="width:100%; max-height:400px; object-fit:contain; border-radius:10px; background:#fff;" />
+        </div>
+      </div>
+    </div>
+  `);
+}
+
+function openPekenWebDetail() {
+  openModal(`
+    <div class="project-detail">
+      <h2>Peken Banyumas Artisan Digital</h2>
+      <div class="project-info">
+        <div class="project-description">
+          <p>Platform web untuk membantu pelaku Artisan mengelola aktivitas usaha secara digital agar lebih terstruktur dan efisien, dengan hak akses khusus untuk Admin dan Artisan.</p>
+          <h3>Fitur Utama:</h3>
+          <ul>
+            <li><i class="fa-solid fa-box"></i> Manajemen produk &amp; pemantauan stok</li>
+            <li><i class="fa-solid fa-cart-shopping"></i> Pencatatan transaksi penjualan</li>
+            <li><i class="fa-solid fa-chart-line"></i> Dashboard analitik ringkas</li>
+            <li><i class="fa-solid fa-users-gear"></i> Sistem multi-role (Admin &amp; Artisan)</li>
+          </ul>
+          <div style="margin-bottom: 8px;"><strong>Peran:</strong> Backend & Project Manager</div>
+          <div style="margin-bottom: 8px;"><strong>Tech Stack:</strong> Python, FastAPI</div>
+          <div style="margin-bottom: 8px;"><strong>Database:</strong> Supabase</div>
+          <div style="margin-bottom: 8px;">
+            <strong>Company Profile:</strong><br/>
+            <a href="https://pekenbanyumasan.pages.dev"
+               target="_blank" style="color:var(--accent); text-decoration:underline; word-break: break-word;">pekenbanyumasan.pages.dev</a>
           </div>
+          <div style="margin-bottom: 8px;">
+            <strong>Artisan App:</strong><br/>
+            <a href="https://artisan-pekenbanyumasan.pages.dev"
+               target="_blank" style="color:var(--accent); text-decoration:underline; word-break: break-word;">artisan-pekenbanyumasan.pages.dev</a>
+          </div>
+          <div style="margin-bottom: 8px;">
+            <strong>GitHub:</strong><br/>
+            <a href="https://github.com/Izzaaaaaaaaaa/Website-Pekan-Banyumas"
+               target="_blank" style="color:var(--accent); text-decoration:underline; word-break: break-word;">View on GitHub</a>
+          </div>
+        </div>
+        <div class="project-mockup">
+          <img src="Mockup/Banner%202.png" alt="Peken Banyumas Design" style="width:100%; max-height:400px; object-fit:contain; border-radius:10px; background:#fff;" />
+        </div>
+      </div>
+    </div>
+  `);
+}
+
+function buildPandaCard() {
+  return `
+    <div class="portfolio-item fade-up" data-category="uiux">
+      <div class="portfolio-card">
+        <img src="Mockup/Panda%20Purchasing.png" alt="Panda Purchasing Design" loading="lazy" style="width:100%;height:200px;object-fit:cover;object-position:top;" />
+        <div class="portfolio-overlay">
+          <h4>Panda Purchasing</h4>
+          <p>UI/UX Design Project</p>
+          <button class="view-btn" data-type="panda">View</button>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+function openPandaDetail() {
+  openModal(`
+    <div class="project-detail">
+      <h2>Panda Purchasing</h2>
+      <div class="project-info">
+        <div class="project-description">
+          <p>Desain UI/UX untuk aplikasi kasir (POS) dan manajemen stok. Dirancang untuk memudahkan pemilik usaha dan kasir dalam mengelola transaksi harian, memantau ketersediaan bahan baku, serta melacak laporan penjualan secara real-time.</p>
+          <h3>Fitur Utama:</h3>
+          <ul>
+            <li><i class="fa-solid fa-chart-pie"></i> Dashboard monitoring pendapatan &amp; stok kritis</li>
+            <li><i class="fa-solid fa-receipt"></i> Pencatatan &amp; riwayat transaksi kasir</li>
+            <li><i class="fa-solid fa-boxes-stacked"></i> Manajemen produk &amp; bahan baku (termasuk stok rusak)</li>
+            <li><i class="fa-solid fa-bell"></i> Sistem notifikasi peringatan otomatis</li>
+            <li><i class="fa-solid fa-users-gear"></i> Multi-role access (Owner &amp; Cashier)</li>
+          </ul>
+          <p><strong>Tools:</strong> Figma, UI/UX Design</p>
+          <p><strong>Design Link:</strong>
+            <a href="https://www.figma.com/design/e6SzucIz49K8U1JqlmjY2V/Panda-Purchasing?node-id=1-692&t=cwYTgmiPaoZhyAOx-1"
+               target="_blank" style="color:var(--accent);text-decoration:underline;word-break:break-word;">View on Figma</a>
+          </p>
+        </div>
+        <div class="project-mockup">
+          <img src="Mockup/Panda%20Purchasing.png" alt="Panda Purchasing Design" style="width:100%; max-height:400px; object-fit:contain; border-radius:10px; background:#fff;" />
         </div>
       </div>
     </div>
