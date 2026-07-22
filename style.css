@@ -241,6 +241,7 @@ section {
   background: radial-gradient(circle, rgba(60, 80, 125, 0.1), transparent 70%);
   border-radius: 50%;
   animation: float 6s ease-in-out infinite;
+  pointer-events: none;
 }
 
 .hero::after {
@@ -253,6 +254,7 @@ section {
   background: radial-gradient(circle, rgba(224, 181, 143, 0.15), transparent 70%);
   border-radius: 50%;
   animation: float 8s ease-in-out infinite reverse;
+  pointer-events: none;
 }
 
 .hero-wrap {
@@ -299,6 +301,7 @@ section {
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
   animation: floatOrbit 4s ease-in-out infinite alternate;
   z-index: 5;
+  pointer-events: none;
 }
 
 .tech-icon svg {
@@ -340,6 +343,8 @@ section {
   min-height: 300px;
   padding-left: 0;
   margin-left: 20px;
+  position: relative;
+  z-index: 100;
 }
 
 .hero-text h1 {
@@ -460,45 +465,39 @@ section {
 .social-links {
   display: flex;
   gap: 30px;
-  justify-content: center;
+  justify-content: flex-start;
   margin-top: 30px;
   margin-bottom: 20px;
-
+  position: relative;
+  z-index: 9999; /* Increased z-index to ensure clickability */
+  pointer-events: auto;
 }
 
 .social-links a {
   width: 45px;
   height: 45px;
   border-radius: 50%;
-  background: rgba(255,255,255,0.05);
+  background: rgba(255, 255, 255, 0.5); /* Buat background sedikit lebih solid agar klik selalu tertangkap */
+  border: 1px solid rgba(60, 80, 125, 0.2); /* Sedikit border agar bentuknya jelas */
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 26px;
   color: var(--accent);
   position: relative;
+  z-index: 99999 !important; /* Force paling atas */
+  pointer-events: auto !important; /* Force bisa diklik */
+  cursor: pointer;
   transition: 0.4s;
-  box-shadow: 0 0 10px rgba(60, 80, 125, 0.2);
-}
-
-.social-links a::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(60, 80, 125, 0.2), transparent 70%);
-  opacity: 0;
-  transition: 0.4s;
-}
-
-.social-links a:hover::before {
-  opacity: 1;
-  transform: scale(1.2);
+  box-shadow: 0 0 12px rgba(60, 80, 125, 0.2);
 }
 
 .social-links a:hover {
   color: #fff;
-  box-shadow: 0 0 25px rgba(60, 80, 125, 0.5);
+  background: var(--accent); /* Menggunakan warna solid agar icon putih terlihat jelas */
+  border-color: var(--accent);
+  box-shadow: 0 0 20px rgba(60, 80, 125, 0.4);
+  transform: translateY(-4px);
 }
 
 
@@ -3020,6 +3019,7 @@ input, textarea {
   border-top: 1px solid rgba(17, 34, 80, 0.08);
   border-bottom: 1px solid rgba(17, 34, 80, 0.08);
   padding: 12px 0;
+  pointer-events: none !important;
 }
 
 .marquee-left {
